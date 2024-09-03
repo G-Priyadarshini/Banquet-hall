@@ -1,0 +1,10 @@
+instance_id = 'i-0123456789abcdef0'  # Replace with your instance ID
+ec2_client.associate_iam_instance_profile(
+    IamInstanceProfile={
+        'Name': role_name
+    },
+    InstanceId=instance_id
+)
+
+
+

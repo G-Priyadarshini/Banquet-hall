@@ -1,0 +1,7 @@
+bastion_host = 'bastion-public-ip'
+bastion_user = 'ec2-user'
+bastion_key_path = '/path/to/your-bastion-key.pem'
+
+private_host = 'private-instance-private-ip'
+private_user = 'ec2-user'
+private_key_path = '/path/to/your-private-key.pem'

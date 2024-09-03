@@ -1,0 +1,11 @@
+import boto3
+
+# Initialize the boto3 client
+ssm_client = boto3.client('ssm')
+
+# Start a session
+response = ssm_client.start_session(
+    Target='i-0123456789abcdef0'  # Replace with your instance ID
+)
+
+print("Session started:", response)

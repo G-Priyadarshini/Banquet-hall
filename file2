@@ -1,0 +1,10 @@
+iam_client.create_role(
+    RoleName=role_name,
+    AssumeRolePolicyDocument=json.dumps(trust_policy)
+)
+
+# Attach the policy to the role
+iam_client.attach_role_policy(
+    RoleName=role_name,
+    PolicyArn='arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore'
+)
